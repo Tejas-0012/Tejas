@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canteen</title>
+    <link rel="stylesheet" href="canteen.css">
+</head>
+<body>
+    <h1>WELCOME TO CANTEEN</h1>
+    <div id="menu">
+        <h4>Menu:</h4>
+<table>
+    <tr>
+    <td> <label for="">IDLY(Rs-20/-):</label></td>
+    <td><input type="number" id="IDLY" placeholder="Enter the quantity.."></td>
+    </tr>
+    <tr>
+    <td> <label for="">IDLY(Rs-20/-):</label></td>
+    <td><input type="number" id="IDLY"placeholder="Enter the quantity.."></td>
+    </tr>
+
+    <tr>
+    <td> <label for="">DOSA(Rs-40/-):</label></td>
+    <td><input type="number" id="DOSA"placeholder="Enter the quantity."></td>
+    </tr>
+
+    <tr>
+    <td> <label for="">POORI(Rs-30/-):</label></td>
+    <td><input type="number" id="POORI"placeholder="Enter the quantity.."></td>
+    </tr>
+
+    <tr>
+    <td> <label for="">RICE-BATH(Rs-35/-):</label></td>
+    <td><input type="number" id="RICE-BATH"placeholder="Enter the quantity.."></td>
+    </tr>
+    <tr>
+    <td> <label for="">MEALS(Rs-50/-):</label></td>
+    <td><input type="number" id="MEALS"placeholder="Enter the quantity.."></td>
+    </tr>
+
+    <tr>
+    <td> <label for="">DAY_SPECIAL(Rs-80/-):</label></td>
+    <td><input type="number" id="DAY_SPECIAL"placeholder="Enter the quantity.."></td>
+    </tr>
+
+</table>
+
+
+    <Button onclick="bill()">Get Total</Button>
+    
+<p id="res"></p>
+</div>
+</body>
+
+<script>
+function bill(){
+var IDLY=document.getElementById("IDLY").value;
+var DOSA=document.getElementById("DOSA").value;
+var POORI=document.getElementById("POORI").value;
+var RICE=document.getElementById("RICE-BATH").value;
+var MEALS=document.getElementById("MEALS").value;
+var DAY_SPECIAL=document.getElementById("DAY_SPECIAL").value;
+var res=document.getElementById("res");
+
+var total=IDLY*20+DOSA*40+POORI*30+RICE*35+MEALS*50+DAY_SPECIAL*80;
+
+res.innerHTML='Total amount is Rs:'+total;
+
+}
+
+</script>
+
+</html>

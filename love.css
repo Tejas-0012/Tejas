@@ -1,0 +1,36 @@
+body{
+    color: white;
+    background-image: url(img1.avif);
+}
+
+#lovebox{
+    height: 300px;
+    background-color: rgba(0,0,0,0.3);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin: 20%;
+
+}   
+label{
+    margin-top: 20px;
+}
+
+input{
+
+    width:200px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10%;
+}
+
+button{
+
+    margin-top: 20px;
+    width: 200px;
+    border: 2px solid red;
+    border-radius: 50%;
+    padding: 20px;
+    background-color: pink;
+}
