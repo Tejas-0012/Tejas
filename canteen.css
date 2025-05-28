@@ -1,5 +1,5 @@
 body{
-    background-image: url(img2.avif);
+    background-image: url(./images/img2.avif);
     backdrop-filter: blur(10px);
     background-repeat: repeat;
     color: white;
